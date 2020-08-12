@@ -1,0 +1,101 @@
+ACTION_DIM: 9
+ARCH: flownets_bn
+ASPECT_RATIO: 1.3333333333333333
+BACKBONE_LEARNING_RATE: 0.0001
+BATCH_SIZE: 2
+CHECKPOINT: ./runtime/checkpoints
+CLASS_ID: null
+CX: 312.9869079589844
+CY: 241.31089782714844
+DATASET: ycb
+DATA_ROOT: "/media/densechen/\u65B0\u52A0\u53771/ycb"
+DATA_TYPE: OBSERVED
+DEBUG: true
+DEBUG_PATH: ./runtime/debug
+DEVICE: 'cuda: 0'
+DILATED_KERNEL_SIZE: 10
+DILATED_MASK: true
+EPISODE_LEN: 1
+EPOCH: 10
+EXNAME: PoseAgent
+FILELIST:
+  test: datasets/ycb/config/test_data_list.txt
+  train: datasets/ycb/config/train_data_list.txt
+FLOW_LOSS: true
+FLOW_LOSS_WEIGHT: 0.1
+FX: 1066.7779541015625
+FY: 1067.487060546875
+GAMMA: 0.1
+IMAGE_HEIGHT: 480
+IMAGE_MEAN:
+- 0.485
+- 0.456
+- 0.406
+IMAGE_SIZE: 640
+IMAGE_STD:
+- 0.229
+- 0.224
+- 0.225
+IMAGE_WIDTH: 640
+INIT_POSE_METHOD: NOISE
+IN_CH: 5
+IRL: false
+LEARNING_RATE: 0.001
+LOG_INTERVAL: 100
+MASK_ENLARGE: 1.4
+MASK_LOSS: true
+MASK_LOSS_WEIGHT: 0.1
+MAX_EPISODE_LEN: 5
+MILESTONES:
+- 3
+- 5
+MODEL_DICT:
+  002_master_chef_can: 1
+  003_cracker_box: 2
+  004_sugar_box: 3
+  005_tomato_soup_can: 4
+  006_mustard_bottle: 5
+  007_tuna_fish_can: 6
+  008_pudding_box: 7
+  009_gelatin_box: 8
+  010_potted_meat_can: 9
+  011_banana: 10
+  019_pitcher_base: 11
+  021_bleach_cleanser: 12
+  024_bowl: 13
+  025_mug: 14
+  035_power_drill: 15
+  036_wood_block: 16
+  037_scissors: 17
+  040_large_marker: 18
+  051_large_clamp: 19
+  052_extra_large_clamp: 20
+  061_foam_brick: 21
+NOISE_ROT: 0.25
+NOISE_TRANS: 0.01
+NUM_POINTS: 1024
+NUM_WORKERS: 0
+POINT_WISE_LOSS: true
+POINT_WISE_LOSS_WEIGHT: 1.0
+PRETRAIN: false
+PRETRAINED_MODEL: pretrained/flownets_bn_EPE2.459.pth.tar
+PRETRAIN_PATH: ''
+PROJECT_ROOT: .
+QUEUE_LEN: 1000
+RESUME: false
+RESUME_PATH: ''
+RL: false
+ROT_DIM: 6
+ROT_FORMAT: ortho6d
+RUNTIME_ROOT: ./runtime
+SAVE_PATH: ./runtime/checkpoints/PoseAgent.pth
+STATE_DIM: 1024
+SYNTHETIC_DEVICE: 'cuda: 1'
+SYNTHETIC_EPISODE_LEN: 2
+TRAINER: trainer
+TRANS_DIM: 3
+WEIGHT_DECAY: 1.0e-05
+WITH_DEPTH: true
+WITH_IMAGE: true
+WITH_MASK: true
+YAML_FILE: null
